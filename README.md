@@ -11,7 +11,7 @@ Package license: GPL2+
 
 Feedstock license: BSD 3-Clause
 
-Summary: Inrterface wrapper for Stitch/Knotr: reproducible report generation tool via Jupyter, Pandoc and Markdown. Export to Jupyter notebook via Notedown.
+Summary: Reproducible report generation tool via Jupyter, Pandoc and Markdown. Contains fork of the Notedown.
 
 
 
