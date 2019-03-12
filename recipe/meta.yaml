@@ -1,5 +1,5 @@
 {% set name = "knitty" %}
-{% set version = "0.5.3" %}
+{% set version = "0.5.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 9f72d70908f9872f1b08559ce8776724020c373aaa150332a1421e4352be5d38
+  sha256: 128dfeead967f0a636b84c791b6cd2c6c48b277d09264c5b722a9b1f631a4d99
 
 build:
   noarch: python
