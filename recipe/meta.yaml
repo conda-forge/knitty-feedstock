@@ -1,5 +1,5 @@
 {% set name = "knitty" %}
-{% set version = "0.5.4" %}
+{% set version = "0.5.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 128dfeead967f0a636b84c791b6cd2c6c48b277d09264c5b722a9b1f631a4d99
+  sha256: 575db25655298a4bd2dd2ee773c93aa077abe577772558eb144ead050bd7fab6
 
 build:
   noarch: python
@@ -30,7 +30,7 @@ requirements:
     - traitlets
     - ipython
     - jupyter_client
-    - nbconvert
+    - nbconvert >=5.4.1
     - pandocfilters
     - py-pandoc >=2.6
     - click
