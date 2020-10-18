@@ -5,11 +5,13 @@ Home: https://github.com/kiwi0fruit/knitty
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/knitty-feedstock/blob/master/LICENSE.txt)
 
 Summary: Reproducible report generation tool via Jupyter, Pandoc and Markdown. Contains fork of the Notedown.
 
+Development: https://github.com/kiwi0fruit/knitty
 
+Documentation: https://github.com/kiwi0fruit/knitty
 
 Current build status
 ====================
