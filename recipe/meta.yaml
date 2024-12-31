@@ -6,12 +6,12 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 3c20125194cef1b50319f793c1760dd9002d9132ac37bd4e265b6e515cb6c8cc
 
 build:
   noarch: python
-  number: 0
+  number: 1
   entry_points:
     - knitty = knitty.knitty:main
     - pre-knitty = knitty.pre_knitty:main
@@ -20,10 +20,10 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - panflute >=1.11.2
     - jupyter_core
     - traitlets
@@ -39,6 +39,8 @@ requirements:
     - ipykernel
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - knitty
     - knitty.api
